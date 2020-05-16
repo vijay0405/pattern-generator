@@ -26,7 +26,7 @@ html, body {
 .settings {
     margin: 10px;
     border-radius: 16px;
-	background-color: rgb(139, 22, 139);
+	background-color: rgba(139, 22, 139, 0.8);
 	color: #fff;
 	padding: 15px;
 	position: fixed;
