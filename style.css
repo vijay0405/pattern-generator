@@ -26,12 +26,10 @@ html, body {
 .settings {
     margin: 10px;
     border-radius: 16px;
-	background-color: rgba(139, 22, 139, 0.8);
+	background-color: rgba(139, 22, 139, 0.5);
 	color: #fff;
 	padding: 15px;
-	position: fixed;
-	top: 0;
-	right: 0;
+    position: fixed;
 	z-index: 10;
 	width: 200px;
 }

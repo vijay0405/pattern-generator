@@ -36,12 +36,13 @@ function createTiles() {
 	// Clear everything
 	container.innerHTML = '';
 	
-	const { innerWidth: width, innerHeight: height } = window;
+    const { innerWidth: width, innerHeight: height } = window;
+    console.log(window)
 	const radius = radiusArr.reduce((acc, el) => acc+=`${el} `, '');
 	const itemsRow = items;
 	const itemsCol = items;
-	const rowSize = width / itemsRow;
-	const colSize = height / itemsCol;
+	const rowSize = (width-items) / itemsRow;
+	const colSize = (height-items) / itemsCol;
 	
 	for(let i=0; i< itemsRow; i++) {
 		const parentEl = document.createElement('div');
@@ -53,7 +54,8 @@ function createTiles() {
 			el.style.height = `${size}px`;
 			el.style.background = colors[Math.floor(Math.random() * colors.length)];
 			el.style.borderRadius = radius;
-			el.style.transform = `rotate(${Math.floor(Math.random() * 4) * 90}deg)`
+            el.style.transform = `rotate(${Math.floor(Math.random() * 4) * 90}deg)`
+            el.addEventListener('click', ()=>{createTiles()})
 			parentEl.appendChild(el);
 		}
 		container.appendChild(parentEl);
