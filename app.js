@@ -4,14 +4,14 @@ const itemsEl = document.getElementById('items');
 const colorsEl = document.getElementById('colors');
 
 const colorsObj = {
-	'purplish': ['#262486', '#CA2996', '#92208E', '#4C1981'],
+	'cyanish': ['#26c6da', '#00acc1', '#00838f', '#e0f7fa'],
 	'redish': ['#f9d5bb', '#f66767', '#d35656', '#3c3d47'],
 	'greenish': ['#42b883', '#347474', '#35495e', '#ff7e67'],
 	'brownish': ['#46211a', '#693d3d', '#ba5536', '#a43820'],
 	'blueish': ['#00487C', '#4BB3FD', '#0496FF', '#027BCE']
 }
 
-let colors = [...colorsObj.purplish];
+let colors = [...colorsObj.cyanish];
 let items = 15;
 let radiusArr = ['100%', '0%', '0%', '0%'];
 
